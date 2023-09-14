@@ -47,6 +47,7 @@
     float: left;
     width: 70%;
     padding:20px;
+    
   }
   section::after{
     clear: both;
@@ -59,8 +60,10 @@
     text-align: center;
     color: white;
   }
-  p::first-letter{
-    font-size: xx-large;
+  .content img {
+    margin-right: 20px; /* Menambahkan margin kanan sebesar 20px */
+}
+  
   }
   /*
   responsive layout
@@ -75,22 +78,28 @@
   </head>
   <body>
     <header>
-      <h1>WEBSITE TEST</h1>
+      <h1>DAIZZU WEBSITE</h1>
     </header>
     <section>
       <nav>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         
       </nav>
+      
+
       <article>
-        <h1>Home</h1>
-        <p>Website ini adalah tentang portofolio saya yang telah dikumpulkan semenjak saya kuliah semester 1. </p>
-        <p>Silahkan klik di menu untuk menelusuri web saya.</p> 
-        <p>Apabila terdapat pertanyaan, silahkan hubungi saya melalui menu Contact.</p> 
+        <h1>TENTANG SAYA</h1>
+        <div class="content">
+        
+        <p><img src="https://i.ibb.co/Ph9PSLw/Diaz.jpg" alt="Foto diaz" width="130" style="float:right; " /> Perkenalkan nama saya diaz,saya adalah mahasiswa universitas pembangunan jaya.</p>
+        </div>
+          
+      <br>
+      
       </article>
     </section>
        <footer>
