@@ -2,7 +2,76 @@
 <html>
   <head>
   <title>WEB PORTOFOLIO</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    *{
+      box-sizing:border-box;
+    }
+    body{
+      font-family: arial;
+    }
+    header{
+      background-color:dimgrey;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+    nav{
+      float: left;
+      width:30%;
+      height: 340px;
+      background-color: grey;
+      padding: 0px;
+    }
+    nav ul{
+      list-style-type: none;
+      padding:0;
+      margin:0;
+    }
+    nav ul li a{
+      display:block;
+      color:black;
+      padding:8px 16px;
+      text-decoration: none;
+    }
+  nav ul li a.active{
+    background-color:black;
+    color:white;
+
+  }
+  nav ul li a:hover:not(.active){
+    background-color:darkslategrey;
+    color:white;
+  } 
+  article{
+    float: left;
+    width: 70%;
+    padding:20px;
+  }
+  section::after{
+    clear: both;
+    display: table;
+    content: "";
+  }
+  footer{
+    background-color:dimgrey;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  p::first-letter{
+    font-size: xx-large;
+  }
+  /*
+  responsive layout
+  */
+  @media (max-width: 300px){
+    nav, article{
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
   </head>
   <body>
     <header>
@@ -10,8 +79,12 @@
     </header>
     <section>
       <nav>
-        Home 
-        About
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        
       </nav>
       <article>
         <h1>Home</h1>
@@ -23,5 +96,5 @@
        <footer>
        &copy; copyright 2023
        </footer>
-  </body>
+  </body>
 </html>
